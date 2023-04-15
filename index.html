@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Exemplo JavaScript</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale:1.0'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='main.js'></script>
+   
+</head>
+
+<body>
+    <header>
+        <!-- MENU DE NAVEGAÇÃO -->
+        <nav>
+            <a href="index.html">INÍCIO</a>
+            <a href="#fgts">FGTS</a>
+            <a href="#ferias">FÉRIAS</a>
+            <a href="#decimo">DÉCIMO</a>
+
+        </nav>
+        <h3> SITE TREINO </h3>
+        <h4> EXEMPLO DE PÁGINA JAVASCRIPT </h4>
+    </header>
+
+<!--
+<div class="compre"> 
+    <h5> Compre agora mesmo! </h5>
+    <button> COMPRAR! </button>
+</div>
+-->
+
+<br><br><br><br>
+
+    <section class="container" id="container">
+        <h1>TECTREINAMENTOS INFORMÁTICA</h1>
+		<h2>Cursos de Informática e Tecnologia</h2>
+		<p>Olá!</p>
+		<p>Vamos falar um pouco sobre o conteúdo a seguir.</p>
+		<p>Nesta página vamos abordar um exemplo de site com as tecnologias HTML, CSS e JavaScript.</p>
+		<p>O intuito da página é abordar com exemplos práticos o desenvolvimento de uma aplicação Web com as citadas tecnologias e não trabalhar de fato com departamento pessoal e áreas afins.</p>
+        <a href="#" id="fgts"></a>
+
+        <p>Em resumo essa página foi criada apenas a título de exemplo para alunos de cursos de desenvolvimento de sites e não deverá ser considerada como base para qualquer tipo de cálculo trabalhista.</p><br>
+    </section>
+    <br>
+
+    <section class="container" id="container">
+        <h2>FGTS</h2>
+        <p>O que é: O FGTS é uma poupança aberta pela empresa em nome do trabalhador que funciona como uma garantia para protegê-lo em caso de demissão sem justa causa.</p> 
+        <p>Os valores do FGTS pertencem exclusivamente ao trabalhador e, em algumas situações especiais, pode ser sacado sem que o trabalhador tenha deixado o emprego.</p>
+        <h2>Cálculo</h2>
+        <br><br>
+
+        <label for="salario">Salário</label><br>
+        <input type="number" id="salario" placeholder="Insira seu salário!">
+        <br><br>
+        <label for="tempo">Tempo trabalhado (em meses)</label><br>
+        <input type="number" id="tempo" placeholder="Insira o nº de meses:">
+        <br>
+        <button onclick="fgts()"> Calcular </button>
+        <br>
+        <a href="#" id="ferias"></a>
+
+        <p><b>O valor aproximado de FGTS no período é de: R$</b><span></span></p>
+        <br>
+
+        <script type="text/javascript">
+            //Caixa de texto com o ID = "salario" será armazenada nessa variável
+            let salario = document.querySelector('#salario');
+            let tempo = document.querySelector('#tempo');
+            let resultado = document.querySelector('span')
+
+            function fgts(){
+                resultado.innerHTML = parseFloat(salario.value * 0.08) * tempo.value
+            }
+
+        </script>
+
+    </section>
+    <br>
+
+    <section class="container" id="container">
+        <h2>Férias</h2>
+        <p>De acordo com a lei trabalhista, o funcionário que sai de férias tem o direito de receber a remuneração mensal adiantada mais um adicional, que equivale a um terço do pagamento.</p>
+        <p>O valor total deve ser depositado na conta do funcionário até dois dias antes do início do período de descanso.</p>
+        <a href="#" id="decimo"></a>
+        <h2>Cálculo</h2> 
+        <br>
+        <a href="ferias.html" class= "link">Clique para calcular férias!</a><br><br>
+ 
+    </section>
+
+
+    <section class="container" id="container">
+        <h2>Décimo</h2>
+        <p>O décimo terceiro, também conhecido como gratificação de Natal, foi instituído no país em 1962. O direito ao trabalhador foi implementado no governo João Goulart, por meio da lei nº 4.090/1962.</p>
+        <p>Como o nome sugere, ele é uma remuneração extra, que é paga no fim do ano.</p>
+        <h2>Cálculo</h2>    
+        <br>
+        <a href="decimo.html" class= "link">Clique para calcular o décimo!</a><br><br>
+
+    </section>
+    <br>
+
+    <section class="container" id="grid-container">
+        <h3 id = "legenda">Clique para saber mais!</h3>
+        <div class="grid">
+            <div><h2>FGTS</h2><img src="img/fgts.png" alt="Imagem FGTS"></div>
+            <div><a href="ferias.html"><h2>Férias</h2><img src="img/ferias.png" alt="Imagem férias"></a></div>
+            <div><a href="decimo.html"><h2>Décimo terceiro</h2><img src="img/decimo.png" alt="Imagem Decimo"></a></div>
+            <div><h2>Investimentos</h2><img src="img/investimentos.png" alt="Imagem investimentos"></div>
+            <div><h2>Renda Extra</h2><img src="img/renda-extra.png" alt="Imagem renda"></div>
+            <div><h2>Serviços</h2><img src="img/servicos.png" alt="Imagem serviços"></div>
+
+        </div>
+    </section>
+
+    <br>  
+<!--
+    <section class="container" id="formulario">
+        <h2>Selecione um Produto para Mais informações</h2>
+        
+        <form action="#" method="get" target="_blank"> 
+            
+            <p class="formulário-contato">
+                
+                <label for="nome">Nome:</label><br>
+                // Coleta de informações do usuário
+                <input class="dados-formulário" type="text" id="nome" name="nome" placeholder="Insira seu nome:">
+
+            </p>
+
+            <p class="formulário-contato">
+                
+                <label for="contato">Contato:</label><br>
+                // Coleta de informações do usuário 
+                <input class="dados-formulário" type="tel" id="nome" name="nome" placeholder="Insira seu Whatsapp:">
+
+            </p>
+            
+            <p class="formulario-contato">
+
+                <input type="checkbox" id="office" name="office" value="Cursos de office">
+                <label for="office">Quero saber mais sobre cursos de office.</label>
+                <br><br>
+                <input type="checkbox" id="web" name="web" value="Cursos desenvolvimento web">
+                <label for="web">Quero saber mais sobre cursos de desenvolvimento web.</label>
+                <br><br>
+                <input type="checkbox" id="marketing" name="marketing" value="Cursos de marketing">
+                <label for="marketing">Quero saber mais sobre cursos de marketing.</label>
+            
+            </p>
+            
+            <p class="formulario-contato">
+                <input type="Reset" value="LIMPAR">
+                <input type="Enviar" value="ENVIAR">
+
+            </p>
+
+        </form>
+       
+    </section>
+-->
+    <br>
+
+<br><br>
+
+    <footer>
+        <H3>EMPRESA EXEMPLO</H3>
+        <H3>EXEMPLO DE PÁGINA JAVASCRIPT</H3>
+        <h3>Site de Tecnologia</h3>
+        <p class="texto-footer">MATEUS DAVI BERNART </p>
+        <p class="texto-footer">mateusbernart14@gmail.com</p>
+        <p class="texto-footer">CNPJ: 00.000.000/0001-00</p>
+
+
+    </footer>
+
+</body>
+</html>

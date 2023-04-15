@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Exemplo Férias</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale:1.0'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='main.js'></script>
+   
+</head>
+
+<body>
+    <header>
+        <!-- MENU DE NAVEGAÇÃO -->
+        <nav>
+            <a href="index.html">>>VOLTAR</a>
+
+        </nav>
+        <h3> SITE TREINO </h3>
+        <h4> EXEMPLO DE PÁGINA JAVASCRIPT </h4>
+    </header>
+
+<!--
+<div class="compre"> 
+    <h5> Compre agora mesmo! </h5>
+    <button> COMPRAR! </button>
+</div>
+-->
+
+<br><br><br><br>
+
+
+    <br>
+    
+    <br>
+
+    <section class="container" id="container">
+        <h2>Férias</h2>
+        <p>De acordo com a lei trabalhista, o funcionário que sai de férias tem o direito de receber a remuneração mensal adiantada mais um adicional, que equivale a um terço do pagamento.</p>
+        <p>O valor total deve ser depositado na conta do funcionário até dois dias antes do início do período de descanso.</p>
+        <br><br>
+       
+        <div class="resposta">
+            <script type="text/javascript">
+                let salario = prompt("Insira seu atual salário:");
+                salario = Number(salario);
+                let abono = salario /3;
+                let bruto = salario + abono;
+                let imposto = bruto * 0.09;
+                let liquido = bruto - imposto;
+
+                document.write("Salário informado: R$"+ salario + "<br>" + "<br>");
+                document.write("Abono de 1/3: R$"+ abono + "<br>"+"<br>");
+                document.write("Valor bruto: R$"+ bruto + "<br>"+"<br>");
+                document.write("Valor de imposto: R$"+ imposto + "<br>" + "<br>");
+                document.write("Valor a receber (liquido): R$"+ liquido +"<br>"+"<br>");
+
+        
+            </script>
+        </div>
+        
+    </section>
+    
+    <br>
+
+    <section class="container" id="grid-container">
+        <div class="grid">
+            <div>Conteúdo 1</div>
+            <div>Conteúdo 2</div>
+            <div>Conteúdo 3</div>
+            <div>Conteúdo 4</div>
+            <div>Conteúdo 5</div>
+            <div>Conteúdo 6</div>
+
+        </div>
+    </section>
+
+
+    <br>  
+<!--
+    <section class="container" id="formulario">
+        <h2>Selecione um Produto para Mais informações</h2>
+        
+        <form action="#" method="get" target="_blank"> 
+            
+            <p class="formulário-contato">
+                
+                <label for="nome">Nome:</label><br>
+                // Coleta de informações do usuário
+                <input class="dados-formulário" type="text" id="nome" name="nome" placeholder="Insira seu nome:">
+
+            </p>
+
+            <p class="formulário-contato">
+                
+                <label for="contato">Contato:</label><br>
+                // Coleta de informações do usuário 
+                <input class="dados-formulário" type="tel" id="nome" name="nome" placeholder="Insira seu Whatsapp:">
+
+            </p>
+            
+            <p class="formulario-contato">
+
+                <input type="checkbox" id="office" name="office" value="Cursos de office">
+                <label for="office">Quero saber mais sobre cursos de office.</label>
+                <br><br>
+                <input type="checkbox" id="web" name="web" value="Cursos desenvolvimento web">
+                <label for="web">Quero saber mais sobre cursos de desenvolvimento web.</label>
+                <br><br>
+                <input type="checkbox" id="marketing" name="marketing" value="Cursos de marketing">
+                <label for="marketing">Quero saber mais sobre cursos de marketing.</label>
+            
+            </p>
+            
+            <p class="formulario-contato">
+                <input type="Reset" value="LIMPAR">
+                <input type="Enviar" value="ENVIAR">
+
+            </p>
+
+        </form>
+       
+    </section>
+-->
+    <br>
+
+<br><br>
+
+    <footer>
+        <H3>EMPRESA EXEMPLO</H3>
+        <H3>EXEMPLO DE PÁGINA JAVASCRIPT</H3>
+        <h2>Site de Tecnologia</h2>
+        <p class="texto-footer">MATEUS DAVI BERNART </p>
+        <p class="texto-footer">mateusbernart14@gmail.com</p>
+        <p class="texto-footer">CNPJ: 00.000.000/0001-00</p>
+
+
+    </footer>
+
+</body>
+</html>
