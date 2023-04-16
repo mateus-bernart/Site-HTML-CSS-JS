@@ -44,11 +44,24 @@
         <div class="resposta">
             <script type="text/javascript">
                 let salario = prompt("Insira seu atual salário:");
+               
+                // ====== AJUSTE DE DÍZIMAS ======= 
+
                 salario = Number(salario);
+                //Transformar para float (não deixar como string) e fixar o número com 2 casas decimais
+                salario = parseFloat(salario.toFixed(2));
+                
                 let abono = salario /3;
+                abono = parseFloat(abono.toFixed(2));
+                
                 let bruto = salario + abono;
+                bruto = parseFloat(bruto.toFixed(2));
+
                 let imposto = bruto * 0.09;
+                imposto = parseFloat(imposto.toFixed(2));
+
                 let liquido = bruto - imposto;
+                liquido = parseFloat(liquido.toFixed(2));
 
                 document.write("Salário informado: R$"+ salario + "<br>" + "<br>");
                 document.write("Abono de 1/3: R$"+ abono + "<br>"+"<br>");
@@ -63,20 +76,6 @@
     </section>
     
     <br>
-
-    <section class="container" id="grid-container">
-        <div class="grid">
-            <div>Conteúdo 1</div>
-            <div>Conteúdo 2</div>
-            <div>Conteúdo 3</div>
-            <div>Conteúdo 4</div>
-            <div>Conteúdo 5</div>
-            <div>Conteúdo 6</div>
-
-        </div>
-    </section>
-
-
     <br>  
 <!--
     <section class="container" id="formulario">

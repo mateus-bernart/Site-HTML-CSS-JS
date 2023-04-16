@@ -3,10 +3,10 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Exemplo Décimo Terceiro</title>
+    <title>Área Administrativa</title>
     <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale:1.0'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-    <script src='main.js'></script>
+    
    
 </head>
 
@@ -28,47 +28,31 @@
 </div>
 -->
 
-<br><br><br><br>
-
-
-    <br>
-    
-    <br>
+<br><br><br><br><br><br>
 
     <section class="container" id="container">
-        <h2>Décimo</h2>
-        <p>O décimo terceiro, também conhecido como gratificação de Natal, foi instituído no país em 1962. O direito ao trabalhador foi implementado no governo João Goulart, por meio da lei nº 4.090/1962.</p>
-        <p>Como o nome sugere, ele é uma remuneração extra, que é paga no fim do ano.</p>
-        <h2>Cálculos</h2>
-        <br>
+        <h2>Área Administrativa</h2>
+        <p>O acesso dessa área é restrita a funcionários.</p>
+        <br><br>
        
         <div class="resposta">
             <script type="text/javascript">
                 
-                let salario = prompt("Informe seu salário: ");
-                salario = Number(salario);
-                salario = parseFloat(salario.toFixed(2));
-
-                let primeiraParcela = salario * 0.5;
-                primeiraParcela = parseFloat(primeiraParcela.toFixed(2));
-
-                let imposto = salario * 0.09;
-                imposto = parseFloat(imposto.toFixed(2));
-
-                let segundaParcela = salario - imposto - primeiraParcela;
-                segundaParcela = parseFloat(segundaParcela.toFixed(2));
-
-                document.write("Salário informado: R$"+ salario + "<br>" + "<br>");
-                document.write("Primeira parcela: R$"+ primeiraParcela + "<br>"+"<br>");
-                document.write("Valor de imposto: R$"+ imposto + "<br>" + "<br>");
-                document.write("Segunda parcela: R$"+ segundaParcela + "<br>"+"<br>");
-
+                let acesso = prompt("Digite sua senha de acesso:");
+                
+                if (acesso === "1234"){
+                    document.write("Olá funcionário! "+"<br>");
+                    document.write("Aqui estaria o conteúdo a ser exibido para pessoas com acesso autorizado. ");
+        
+                }else{
+                    document.write("Acesso negado.");
+                }
+        
             </script>
         </div>
-        
     </section>
     
-
+    <br>
     <br>  
 <!--
     <section class="container" id="formulario">
