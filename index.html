@@ -3,181 +3,224 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Exemplo JavaScript</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale:1.0'>
+    <title>AgroTech - #19193</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src='main.js'></script>
-   
+    <script src="https://unpkg.com/scrollreveal"></script>
+
 </head>
-
-<body>
-    <header>
-        <!-- MENU DE NAVEGAÇÃO -->
+    
+    <body>
+        <header>
+        <!--<img src="" alt="Logo-Agro"> -->
+            <!-- Teste-->
+          <h1 class="rumble">Equipe AgroTech<br><span>#19193</span><h1>
         <nav>
-            <a href="index.html">INÍCIO</a>
-            <a href="#fgts">FGTS</a>
-            <a href="#ferias">FÉRIAS</a>
-            <a href="#decimo">DÉCIMO</a>
+            <ul class="nav_links">
+                
+                <li><a href="#sec-01">Início</a></li>
+                <li><a href="#sec-02">Patrocinadores</a></li>
+                <li><a href="#sec-03">Prêmios/Competições</a></li>
+                <li><a href="#sec-04">Robôs</a></li>
+                <a class="btn" href="#" onclick="https://instagram.com"><button> Contato</button> </a>
 
+            </ul>
+            
         </nav>
-        <h3> SITE TREINO </h3>
-        <h4> EXEMPLO DE PÁGINA JAVASCRIPT </h4>
-    </header>
+        
+        
+        </header>
 
-<!--
-<div class="compre"> 
-    <h5> Compre agora mesmo! </h5>
-    <button> COMPRAR! </button>
-</div>
--->
+        <section class = "inicio">
+         <video class="video-slide active" src="finals1.mp4" autoplay muted loop></video> 
+         <video class="video-slide" src="finals1.mp4" autoplay muted loop></video> 
+        
+            <div class="content active">
+                <h1> Quem somos <br><span>NÓS?</span> </h1>
+            <p> Texto de exemplo para descrição da equipe.</p>
+            <a href="#">Leia mais</a>
+            </div>
+          
+            <div class="content">
+                <h1> O que é a <br><span>"FIRST"? </span> </h1>
+            <p> Texto de exemplo para descrição da equipe.</p>
+            <a href="#">Leia mais</a>
+            </div>
+            
+            <div class="content">
+                <h1> O que é a FIRST TECH CHALLENGE? </h1>
+            <p> Texto de exemplo para descrição da equipe.</p>
+            <a href="#">Leia mais</a>
+            </div>
 
-<br><br><br><br>
 
-    <section class="container" id="container">
-        <h1>SITE INFORMATIVO DE CÁLCULOS TRABALHISTAS </h1>
-		<h2>Site de exemplo utilizando HTML, CSS E JavaScript</h2>
-		<p>Olá!</p>
-		<p>Vamos falar um pouco sobre o conteúdo a seguir.</p>
-		<p>Nesta página vamos abordar um exemplo de site com as tecnologias HTML, CSS e JavaScript.</p>
-		<p>O intuito da página é abordar com exemplos práticos o desenvolvimento de uma aplicação Web com as citadas tecnologias e não trabalhar de fato com departamento pessoal e áreas afins.</p>
-        <a href="#" id="fgts"></a>
+        <div class="slider-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+        </div>
 
-        <p>Em resumo essa página foi criada apenas a título de exemplo para alunos de cursos de desenvolvimento de sites e não deverá ser considerada como base para qualquer tipo de cálculo trabalhista.</p><br>
-    </section>
-    <br>
+        </section>
 
-    <section class="container" id="container">
-        <h2>FGTS</h2>
-        <p>O que é: O FGTS é uma poupança aberta pela empresa em nome do trabalhador que funciona como uma garantia para protegê-lo em caso de demissão sem justa causa.</p> 
-        <p>Os valores do FGTS pertencem exclusivamente ao trabalhador e, em algumas situações especiais, pode ser sacado sem que o trabalhador tenha deixado o emprego.</p>
-        <h2>Cálculo</h2>
-        <br>
+        <!-- Section 1 -->
+                     <!-- HISTÓRIA DA EQUIPE -->
+         <a href="#" id="sec-01"></a>
+        <section class="sec-01">
 
-        <label for="salario">Salário</label><br>
-        <input type="number" id="salario" placeholder="Insira seu salário!">
-        <br><br>
-        <label for="tempo">Tempo trabalhado (em meses)</label><br>
-        <input type="number" id="tempo" placeholder="Insira o nº de meses:">
-        <br>
-        <button onclick="fgts()"> Calcular </button>
-        <br>
-        <a href="#" id="ferias"></a>
+            <div class="container">
+                <h2 class="main-title">História do Time</h2>
+                <div class="content">
+                    <div class="image">
+                        <img src="img1.png" alt="imagem1">
+                    </div>
+                    <div class="text-box">
+                        <h3>Nossa história</h3>
+                        <p> Nossa jornada começou em 2020 na temporada Ultimate Goal, onde nossa equipe possuia apenas 5 integrantes contra gigantes equipes brasileiras. passamos por diversos desafios de engenharia, programação na linguagem JAVA, trabalho em equipe, organização e documentação de tarefas, uma incrível iniciativa ao mercado de trabalho! </p>
+                        <br>
+                        <p> Atualmente, estamos entre as melhores equipes do brasil competindo nacionalmente e internacionalmente. Com premiações nas áreas da utilização de software para melhor controle do robô, inovação da engenharia, trabalho em equipe e vencedora das disputas de arena. Tudo graças à dedicação e comprometimento de cada um!</p> 
+                    </div>
+                </div>
+                <div class="media-icons">
+                    <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </section>
 
-        <p><b>O valor aproximado de FGTS no período é de: R$</b><span></span></p>
-        <br>
+        <!-- Section 2 -->
+              <!-- PATROCINADORES -->
 
-        <script type="text/javascript">
-            //Caixa de texto com o ID = "salario" será armazenada nessa variável
-            let salario = document.querySelector('#salario');
-            let tempo = document.querySelector('#tempo');
-            let resultado = document.querySelector('span')
+        <!-- Adicionar uma segunda coluna com a mesma configuração, contendo algumas logos -->
+         <a href="#" id="sec-02"></a>
+        <section class="sec-02">
+            <div class="container">
+                <h3 class="section-title">Patrocinadores</h3>
+                <div class="content">
+                    <div class="image">
+                        <img src="img2.png" alt="img-agro">
+                    </div>
+                    <div class="info">
+                        <h4 class="info-title">Aqueles que fazem acontecer.</h4>
+                        <p>Utilizando estratégias de marketing, divulgação e administrativas, no início da temporada nossa equipe realizou um plano de patrocínio para nos conectarmos com empresas da nossa região e internacionais!</p>
+                        <br>
+                        <p>Através da participação de eventos como o HJ Conferente, Femix, Expo, conseguimos o nome de figuras muito importantes de diversos cenários, desde finanças até o agronegócio! Influenciadores como o Thiago Nigro em nome da Primo Rico, Havan, John Deere, entre outros! </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+                        
+            <!-- PRÊMIOS E COMPETIÇÕES -->
 
-            function fgts(){
-                resultado.innerHTML = parseFloat(salario.value * 0.08) * tempo.value
-            }
+        <!-- Adicionar uma segunda coluna com a mesma configuração, contendo PREMIOS E COMPETIÇÕES -->
+        <a href="#" id="sec-03"></a>
+        <section class="sec-03">
+            <div class="container">
+                <h3 class="section-title">Prêmios e competições</h3>
+                <div class="content">
+                    <div class="media-info">
+                        <li><a href="#" class="icon"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#" class="icon"><i class="fab fa-youtube"></i> Youtube</a></li>
+                        <!-- remember update css -->
+                    </div>
+                    <!-- Side image insert test -->
+                     <div class="images-container">
+                        <div class="image" style="float: left; margin-right: 20px;">
+                          <img src="foto.png" alt="foto">
+                        </div>
+                       
+                        <div class="image" style="float: left;">
+                          <img src="another-image.png" alt="another image">
+                        </div>
+                        <div style="clear: both;"></div>
+                  </div>   
+                </div>
+            </div>
+        </section>
+            
+            <!-- Section 04 -->
+            <!-- ROBÔS -->
+            <a href="#" id="sec-04"></a>
+            <section class="sec-04">
+            <div class="container">
+                <h3 class="section-title">Robôs!</h3>
+                <div class="content">
+                  
+                    <div class="media-info">
+                        <li><a href="#" class="icon"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#" class="icon"><i class="fab fa-youtube"></i> Youtube</a></li>
+                        <!-- remember update css -->
+                    </div>
+                    <div class="images-container">
+                        <div class="image" style="float: left; margin-right: 20px;">
+                          <img src="foto.png" alt="foto">
+                        </div>
+               
+                        <div class="image" style="float: left;">
+                          <img src="another-image.png" alt="another image">
+                        </div>
+                        <div style="clear: both;"></div>
+                      
+                        <div class="text-box-robot" style="float: left; margin-right: 20px;">
+                              <h3>Bóbio</h3>
+                          <h4> Primeira foto </h4>
+                          <br>
+                          <p> Nosso primeiro robô, foi baseado em uma engenharia onde os elementos eram argolas, e demandava que o robô coletasse elas, e as lançasse em 3 níveis diferentes de alvo. </p>
+                          <br>
+                        </div>
+                      
+                      <div class="text-box-robot" style="float: left; margin-right: 20px;">
+                              <h3>Bóbio</h3>
+                          <h4> Primeira foto </h4>
+                          <br>
+                          <p> Nosso primeiro robô, foi baseado em uma engenharia onde os elementos eram argolas, e demandava que o robô coletasse elas, e as lançasse em 3 níveis diferentes de alvo. </p>
+                    </div>
+                      <div class="text-box-robot" style="float: left;">
+                              <h3>TNT</h3>
+                          <h4> Segunda foto </h4>
+                          <br>
+                          <p> Nosso primeiro robô, foi baseado em uma engenharia onde os elementos eram argolas, e demandava que o robô coletasse elas, e as lançasse em 3 níveis diferentes de alvo. </p>
+                    </div>
+                  
+                </div>
+            </div>
+        </section>
+            <footer>
+              <button onclick="goToTop()" id="go-to-top">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="#FFFFFF" d="M12,3L1,12h6v9h10v-9h6L12,3z M12,8.6L17.6,14H14v5h-4v-5H6.4L12,8.6z"/>
+                </svg>
+</button>
+            </footer>
 
+        <script>
+            ScrollReveal({
+                //reset:true,
+                distance: '60px',
+                duration: 1500,
+                delay: 400
+            });
+
+            ScrollReveal().reveal('.main-title, .section-title', { delay: 500, origin: 'left'});
+            ScrollReveal().reveal('.sec-01 .image, .info', { delay: 600, origin: 'bottom'});
+            ScrollReveal().reveal('.text-box', { delay: 500, origin: 'right'});
+            ScrollReveal().reveal('.media-icons i', { delay: 500, origin: 'bottom', interval:100});
+            ScrollReveal().reveal('.sec-02 .image, .sec-03 .image', { delay: 600, origin: 'top'});
+            ScrollReveal().reveal('.media-info li', { delay: 600, origin: 'left', interval:100});
+
+          document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+              e.preventDefault();
+
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+        });
+            
         </script>
 
-    </section>
-    <br>
+    </body>
 
-    <section class="container" id="container">
-        <h2>Férias</h2>
-        <p>De acordo com a lei trabalhista, o funcionário que sai de férias tem o direito de receber a remuneração mensal adiantada mais um adicional, que equivale a um terço do pagamento.</p>
-        <p>O valor total deve ser depositado na conta do funcionário até dois dias antes do início do período de descanso.</p>
-        <a href="#" id="decimo"></a>
-        <h2>Cálculo</h2> 
-        <br>
-        <a href="ferias.html" class= "link">Clique para calcular férias!</a><br><br>
- 
-    </section>
-
-
-    <section class="container" id="container">
-        <h2>Décimo</h2>
-        <p>O décimo terceiro, também conhecido como gratificação de Natal, foi instituído no país em 1962. O direito ao trabalhador foi implementado no governo João Goulart, por meio da lei nº 4.090/1962.</p>
-        <p>Como o nome sugere, ele é uma remuneração extra, que é paga no fim do ano.</p>
-        <h2>Cálculo</h2>    
-        <br>
-        <a href="decimo.html" class= "link">Clique para calcular o décimo!</a><br><br>
-
-    </section>
-    <br>
-
-    <section class="container" id="grid-container">
-        <h3 id = "legenda">Clique para saber mais!</h3>
-        <div class="grid">
-            <div><h2>FGTS</h2><img src="img/fgts.png" alt="Imagem FGTS"></div>
-            <div><a href="ferias.html"><h2>Férias</h2><img src="img/ferias.png" alt="Imagem férias"></a></div>
-            <div><a href="decimo.html"><h2>Décimo terceiro</h2><img src="img/decimo.png" alt="Imagem Decimo"></a></div>
-            <div><h2>Investimentos</h2><img src="img/investimentos.png" alt="Imagem investimentos"></div>
-            <div><h2>Renda Extra</h2><img src="img/renda-extra.png" alt="Imagem renda"></div>
-            <div><h2>Serviços</h2><img src="img/servicos.png" alt="Imagem serviços"></div>
-
-        </div>
-    </section>
-
-    <br>  
-<!--
-    <section class="container" id="formulario">
-        <h2>Selecione um Produto para Mais informações</h2>
-        
-        <form action="#" method="get" target="_blank"> 
-            
-            <p class="formulário-contato">
-                
-                <label for="nome">Nome:</label><br>
-                // Coleta de informações do usuário
-                <input class="dados-formulário" type="text" id="nome" name="nome" placeholder="Insira seu nome:">
-
-            </p>
-
-            <p class="formulário-contato">
-                
-                <label for="contato">Contato:</label><br>
-                // Coleta de informações do usuário 
-                <input class="dados-formulário" type="tel" id="nome" name="nome" placeholder="Insira seu Whatsapp:">
-
-            </p>
-            
-            <p class="formulario-contato">
-
-                <input type="checkbox" id="office" name="office" value="Cursos de office">
-                <label for="office">Quero saber mais sobre cursos de office.</label>
-                <br><br>
-                <input type="checkbox" id="web" name="web" value="Cursos desenvolvimento web">
-                <label for="web">Quero saber mais sobre cursos de desenvolvimento web.</label>
-                <br><br>
-                <input type="checkbox" id="marketing" name="marketing" value="Cursos de marketing">
-                <label for="marketing">Quero saber mais sobre cursos de marketing.</label>
-            
-            </p>
-            
-            <p class="formulario-contato">
-                <input type="Reset" value="LIMPAR">
-                <input type="Enviar" value="ENVIAR">
-
-            </p>
-
-        </form>
-       
-    </section>
--->
-    <br>
-
-<br><br>
-
-    <footer>
-        <H3>EMPRESA EXEMPLO</H3>
-        <H3>EXEMPLO DE PÁGINA JAVASCRIPT</H3>
-        <h3>Site de Tecnologia</h3>
-        <p class="texto-footer">MATEUS DAVI BERNART </p>
-        <p class="texto-footer">mateusbernart14@gmail.com</p>
-        <p class="texto-footer">CNPJ: 00.000.000/0001-00</p>
-        <br>
-        <p class="texto-footer"><a href="adm.html"> Acessar a área Administrativa:</a></p>
-        <br>
-    </footer>
-
-</body>
 </html>
